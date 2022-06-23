@@ -12,12 +12,12 @@ desired_capabilities = {
     'platformVersion':'11',
     'platformName':'android',
     'isRealMobile':true,
-    'app':'lt://', //Enter the app_url here
+
+    //Enter the Custom_ID here that was used to upload your application
+    'app':'ENTER_CUSTOM_ID_HERE', //Enter the app_url here
+
     'visual':true,
     'video': true,
-
-    //ADD GEOLOCATION BASED ON COUNTRY CODE
-    'geoLocation':'fr'  
 }
 
 driver = wd.promiseRemote(`https://${username}:${accesskey}@mobile-hub.lambdatest.com/wd/hub`)
